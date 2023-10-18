@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style1.css">
-    <title>Flex Box</title>
+    <title>Flexbox</title>
 </head>
 
 <body>
@@ -19,6 +19,8 @@
         <ul>
             <li><b>main axis:</b> eje principal</li>
             <li><b>cross axis:</b> eje transversal</li>
+            <li><b>default:</b> valor que viene en la
+                configuración por defecto, y no son necesarias escribirlas</li>
         </ul>
 
         <section class="titulo">
@@ -26,12 +28,28 @@
         </section>
 
         <ul>
-            <li><b>flex-direction: </b></li>
-            <p>row: Alineación horizontal. </p>
-            <p>column: Alineación vertical.</p>
-            <li><b>flex item:</b> color naranja</li>
-            <li><b>default:</b> Son las propiedades que ya vienen en la
-                configuración por defecto, y no son necesarias escribirlas.</li>
+            <li><b>flex-wrap: </b> envuelve a los flex items
+                <ul>
+                    <li>no-wrap: no envuelto. (default)</li>
+                    <li>wrap: envuelto.</li>
+                    <li>wrap-reverse: envuelto a reves.</li>
+                </ul>
+            </li>
+            <li><b>flex-direction: </b> define la dirección de los flex items
+                <ul>
+                    <li>row: alineación horizontal (default)</li>
+                    <li>column: alineación vertical</li>
+                </ul>
+            </li>
+            <li><b>order:</b> define el orden de cada flex item
+                <ul>
+                    <li>0: posición natural (default)</li>
+                    <li>valores negativos y positivos</li>
+                </ul>
+            </li>
+            <li><b>flex-grow:</b></li>
+            <li><b>flex-shrink:</b></li>
+            <li><b>flex-basis:</b></li>
         </ul>
 
 
