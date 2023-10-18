@@ -11,11 +11,10 @@
 <body>
 
     <div class="container">
-        <section class="titulo">
+        <div class="titulo">
             <h1>CSS Flexbox</h1>
             <img src="img/flex-img.png" alt="">
-        </section>
-
+        </div>
         <ul>
             <li><b>main axis:</b> eje principal de los flex items</li>
             <li><b>cross axis:</b> eje transversal de los flex items</li>
@@ -24,11 +23,9 @@
                 y lo establece
                 como un contenedor de tipo flexbox</li>
         </ul>
-
-        <section class="titulo">
+        <div class="titulo">
             <h3>Propiedades Flexbox</h3>
-        </section>
-
+        </div>
         <ul>
             <li><b>flex-direction:</b> se aplica al flex container y define la dirección de los flex items
                 <ul>
@@ -41,6 +38,23 @@
                     <li>no-wrap: no envueltos (default)</li>
                     <li>wrap: envueltos</li>
                     <li>wrap-reverse: envueltos al reves</li>
+                </ul>
+            </li>
+
+            <li><b>justify-content:</b> se aplica al flex container y ordena a sus flex items respecto al eje principal
+                (main axis)
+                <ul>
+                    <li>flex-start: se ordenaran desde el principio, iniciando por el primer flex item (default)</li>
+                    <li>flex-end: se ordenaran desde el final, iniciando por el último flex item (default) </li>
+                    <li>center: se ordenaran al centro</li>
+                    <li>space-between: se utilizará el espacio sobrante del flex container para repartir espacios
+                        iguales entre los flex items pero excepto a los extremos (el primer y el último flex item
+                        estarán pegados a los extremos)</li>
+                    <li>space-around: se utilizará el espacio sobrante del flex container para repartir espacios
+                        iguales entre los flex items pero en los extremos tendrán el 50% del espacio que hay entre los
+                        otros flex items</li>
+                    <li>space-evenly: se utilizará el espacio sobrante del flex container para repartir espacios
+                        iguales entre todos los flex items, incluso en los flex items de los extremos</li>
                 </ul>
             </li>
             <li><b>order:</b> se aplica en cada flex item y define su orden de posición en el flex container
@@ -68,66 +82,68 @@
                 </ul>
             </li>
         </ul>
-
-
-        <section class="titulo">
+        <div class="titulo">
             <h3>Casos de Flexbox</h3>
-        </section>
-
+        </div>
         <ul>
             <li><b>flex container:</b> color negro</li>
             <li><b>flex item:</b> color naranja</li>
         </ul>
 
-        <section class="titulo">
-            <h3>Caso 0</h3>
-        </section>
-        <p><b>flex container:</b></p>
-        <ul style="margin-top: 5px;">
-            <li>display: flex</li>
-            <li>flex-direction: row (default)</li>
-            <li>flex-wrap: nowrap (default)</li>
-            <li>justify-content: flex-start (default)</li>
-            <li>align-items: stretch (default)</li>
-        </ul>
-        <p><b>flex items:</b></p>
-        <ul style="margin-top: 5px;">
-            <li>order: 0 (default)</li>
-            <li>flex-grow: 0 (default)</li>
-            <li>flex-shrink: 1 (default)</li>
-        </ul>
-        <section class="container-flex c-caso-0">
-            <article class="item i-caso-0">1</article>
-            <article class="item i-caso-0">2</article>
-            <article class="item i-caso-0">3</article>
-            <article class="item i-caso-0">4</article>
-            <article class="item i-caso-0">5</article>
+        <section class="caso">
+            <div class="titulo">
+                <h3>Caso 0</h3>
+            </div>
+            <p><b>flex container:</b></p>
+            <ul style="margin-top: 5px;">
+                <li>display: flex</li>
+                <li>flex-direction: row (default)</li>
+                <li>flex-wrap: nowrap (default)</li>
+                <li>justify-content: flex-start (default)</li>
+                <li>align-items: stretch (default)</li>
+            </ul>
+            <p><b>flex items:</b></p>
+            <ul style="margin-top: 5px;">
+                <li>order: 0 (default)</li>
+                <li>flex-grow: 0 (default)</li>
+                <li>flex-shrink: 1 (default)</li>
+            </ul>
+            <div class="container-flex c-caso-0">
+                <article class="item i-caso-0">1</article>
+                <article class="item i-caso-0">2</article>
+                <article class="item i-caso-0">3</article>
+                <article class="item i-caso-0">4</article>
+                <article class="item i-caso-0">5</article>
+            </div>
         </section>
 
-        <section class="titulo">
-            <h3>Caso 1</h3>
+        <section class="caso">
+            <div class="titulo">
+                <h3>Caso 1</h3>
+            </div>
+            <p><b>flex container:</b></p>
+            <ul style="margin-top: 5px;">
+                <li>display: flex</li>
+                <li style="color: red;">flex-direction: column</li>
+                <li>flex-wrap: nowrap (default)</li>
+                <li>justify-content: flex-start (default)</li>
+                <li>align-items: stretch (default)</li>
+            </ul>
+            <p><b>flex items:</b></p>
+            <ul style="margin-top: 5px;">
+                <li>order: 0 (default)</li>
+                <li>flex-grow: 0 (default)</li>
+                <li>flex-shrink: 1 (default)</li>
+            </ul>
+            <div class="container-flex c-caso-1">
+                <article class="item i-caso-1">1</article>
+                <article class="item i-caso-1">2</article>
+                <article class="item i-caso-1">3</article>
+                <article class="item i-caso-1">4</article>
+                <article class="item i-caso-1">5</article>
+            </div>
         </section>
-        <p><b>flex container:</b></p>
-        <ul style="margin-top: 5px;">
-            <li>display: flex</li>
-            <li style="color: red;">flex-direction: column</li>
-            <li>flex-wrap: nowrap (default)</li>
-            <li>justify-content: flex-start (default)</li>
-            <li>align-items: stretch (default)</li>
-        </ul>
-        <p><b>flex items:</b></p>
-        <ul style="margin-top: 5px;">
-            <li>order: 0 (default)</li>
-            <li>flex-grow: 0 (default)</li>
-            <li>flex-shrink: 1 (default)</li>
-        </ul>
-        <section class="container-flex c-caso-1">
-            <article class="item i-caso-1">1</article>
-            <article class="item i-caso-1">2</article>
-            <article class="item i-caso-1">3</article>
-            <article class="item i-caso-1">4</article>
-            <article class="item i-caso-1">5</article>
-        </section>
+
     </div>
 
 </body>
