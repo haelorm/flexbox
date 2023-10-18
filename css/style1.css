@@ -40,7 +40,8 @@ img{
     border: thin solid #000;
     padding: 3px;
     background-color: var(--first-color);
-    flex-basis: 100px;
+    text-align: center;
+    flex-basis: 30px;
     
 }
 

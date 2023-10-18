@@ -19,8 +19,9 @@
         <ul>
             <li><b>main axis:</b> eje principal de los flex items</li>
             <li><b>cross axis:</b> eje transversal de los flex items</li>
-            <li><b>default:</b> valor que viene en la
-                configuración por defecto, y no es necesario escribirlo</li>
+            <li><b>default:</b> quiere decir que la propiedad se aplica por defecto y NO es necesario escribir</li>
+            <li><b>(display: flex)</b> declaración css inicial que se aplica al contenedor de los items y lo establece
+                como un un contenedor de tipo flexbox</li>
         </ul>
 
         <section class="titulo">
@@ -28,28 +29,44 @@
         </section>
 
         <ul>
-            <li><b>flex-wrap: </b> se escribe en el container flexbox y envuelve a todos los flex items
+            <li><b>flex-direction:</b> se aplica al container flexbox y define la dirección de los flex items
+                <ul>
+                    <li>row: alineación horizontal (default)</li>
+                    <li>column: alineación vertical</li>
+                </ul>
+            </li>
+            <li><b>flex-wrap:</b> se aplica al container flexbox y envuelve a todos los flex items como un solo grupo
                 <ul>
                     <li>no-wrap: no envueltos (default)</li>
                     <li>wrap: envueltos</li>
                     <li>wrap-reverse: envueltos al reves</li>
                 </ul>
             </li>
-            <li><b>flex-direction: </b> se escribe en el container flexbox y define la dirección de los flex items
-                <ul>
-                    <li>row: alineación horizontal (default)</li>
-                    <li>column: alineación vertical</li>
-                </ul>
-            </li>
-            <li><b>order:</b> se escribe en cada flex item y define su orden de posición en el container flex
+            <li><b>order:</b> se aplica en cada flex item y define su orden de posición en el container flex
                 <ul>
                     <li>0: posición natural (default)</li>
                     <li>valores negativos y positivos</li>
                 </ul>
             </li>
-            <li><b>flex-grow:</b></li>
-            <li><b>flex-shrink:</b></li>
-            <li><b>flex-basis:</b></li>
+            <li><b>flex-grow:</b> se aplica en cada flex item y es la capacidad de crecer en el espacio sobrante del
+                container flex
+                <ul>
+                    <li>Solo valores positivos</li>
+                </ul>
+            </li>
+            <li><b>flex-shrink:</b> se aplica en cada flex item y es la capacidad de reducirse cuando el container flex
+                se reduce o ya tiene espacio
+                <ul>
+                    <li>Solo valores positivos</li>
+                </ul>
+            </li>
+            <li><b>flex-basis:</b> se aplica a un item flex específico, y si la alineación es "row" flex-basis
+                representará a la propiedad "width", si la alineación es "column" representará a "height"
+                <ul>
+                    <li>la propiedad flex-basis deshabilitará a la propiedad width cuando ambas esten aplicadas a un
+                        mismo elemento</li>
+                </ul>
+            </li>
         </ul>
 
 
@@ -80,11 +97,11 @@
             <li>flex-shrink: 1 (default)</li>
         </ul>
         <section class="container-flex c-caso-0">
-            <article class="item i-caso-0">Item 1</article>
-            <article class="item i-caso-0">Item 2</article>
-            <article class="item i-caso-0">Item 3</article>
-            <article class="item i-caso-0">Item 4</article>
-            <article class="item i-caso-0">Item 5</article>
+            <article class="item i-caso-0">1</article>
+            <article class="item i-caso-0">2</article>
+            <article class="item i-caso-0">3</article>
+            <article class="item i-caso-0">4</article>
+            <article class="item i-caso-0">5</article>
         </section>
     </div>
 
