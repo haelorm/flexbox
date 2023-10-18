@@ -27,13 +27,13 @@
             <h3>Propiedades Flexbox</h3>
         </div>
         <ul>
-            <li><b>flex-direction:</b> se aplica al flex container y define la dirección de los flex items
+            <li><b>flex-direction:</b> se aplica al flex container para definir la dirección de los flex items
                 <ul>
                     <li>row: alineación horizontal (default)</li>
                     <li>column: alineación vertical</li>
                 </ul>
             </li>
-            <li><b>flex-wrap:</b> se aplica al flex container y envuelve a todos los flex items como un solo grupo
+            <li><b>flex-wrap:</b> se aplica al flex container envolver a todos los flex items como un solo grupo
                 <ul>
                     <li>no-wrap: no envueltos (default)</li>
                     <li>wrap: envueltos</li>
@@ -41,11 +41,11 @@
                 </ul>
             </li>
 
-            <li><b>justify-content:</b> se aplica al flex container y ordena a sus flex items respecto al eje principal
+            <li><b>justify-content:</b> se aplica al flex container para ordenar a sus flex items respecto al eje principal
                 (main axis)
                 <ul>
                     <li>flex-start: se ordenaran desde el principio, iniciando por el primer flex item (default)</li>
-                    <li>flex-end: se ordenaran desde el final, iniciando por el último flex item (default) </li>
+                    <li>flex-end: se ordenaran desde el final, iniciando por el último flex item</li>
                     <li>center: se ordenaran al centro</li>
                     <li>space-between: se utilizará el espacio sobrante del flex container para repartir espacios
                         iguales entre los flex items pero excepto a los extremos (el primer y el último flex item
@@ -57,9 +57,30 @@
                         iguales entre todos los flex items, incluso en los flex items de los extremos</li>
                 </ul>
             </li>
-            <li><b>order:</b> se aplica en cada flex item y define su orden de posición en el flex container
+            <li><b>align-items:</b> se aplica al flex container para ordenar a sus flex items respecto al eje transversal
+                (cross axis)
                 <ul>
-                    <li>0: posición natural (default)</li>
+                    <li>stretch: si el elemento no tiene un tamaño fijo, se estirará ocupando todo el espacio que tenga
+                        disponible (default)</li>
+                    <li>flex-start: se ordenaran desde el principio, iniciando por el primer flex item </li>
+                    <li>flex-end: se ordenaran desde el final, iniciando por el último flex item</li>
+                    <li>center: se ordenaran al centro</li>
+                    <li>baseline: se ordenarán por las bases de los contenidos en cada flex item</li>
+                </ul>
+            </li>
+            <li><b>align-content:</b> funciona solo si la propiedad flex-wrap tiene el valor "wrap" o "wrap-reverse" y se aplica al flex container para ordenar a sus flex items respecto al eje transversal (cross axis)
+                <ul>
+                    <li>stretch: si el elemento no tiene un tamaño fijo, se estirará ocupando todo el espacio que tenga
+                        disponible (default)</li>
+                    <li>flex-start: se ordenaran desde el principio, iniciando por el primer flex item </li>
+                    <li>flex-end: se ordenaran desde el final, iniciando por el último flex item</li>
+                    <li>center: se ordenaran al centro</li>
+                    <li>baseline: se ordenarán por las bases de los contenidos en cada flex item</li>
+                </ul>
+            </li>
+            <li><b>order:</b> se aplica en cada flex item para definir su orden de posición en el flex container
+                <ul>
+                    <li>0 (cero): posición natural (default)</li>
                     <li>valores negativos y positivos</li>
                 </ul>
             </li>
@@ -74,10 +95,10 @@
                     <li>Solo valores positivos</li>
                 </ul>
             </li>
-            <li><b>flex-basis:</b> se aplica a un item flex específico, y si la alineación es "row" flex-basis
-                representará a la propiedad "width", si la alineación es "column" representará a "height"
+            <li><b>flex-basis:</b> se aplica a un item flex específico, si la alineación es "row" flex-basis
+                representará a la propiedad "width", y si la alineación es "column" representará a la propiedad "height"
                 <ul>
-                    <li>la propiedad flex-basis deshabilitará a la propiedad width cuando ambas esten aplicadas a un
+                    <li>la propiedad flex-basis dejará sin efecto a la propiedad width cuando ambas esten aplicadas a un
                         mismo elemento</li>
                 </ul>
             </li>

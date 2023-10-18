@@ -1,5 +1,5 @@
 :root {
-    --first-color: #e96417;
+    --first-color: #f5f117;
     --second-color: #000000;
     --max-width: 1024px;
 }
@@ -53,7 +53,7 @@ img {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     align-items: stretch;
 }
 
