@@ -34,6 +34,7 @@ img {
     background-color: var(--second-color);
     margin-top: .5rem;
     margin-bottom: 3rem;
+    display: flex;
 }
 
 .item {
@@ -49,11 +50,14 @@ img {
     margin-top: 4rem
 }
 
-.c-caso-0 {
-    display: flex;
+.c-row-reverse {
+    flex-direction: row-reverse;
 }
 
-.c-caso-1 {
-    display: flex;
+.c-column {
     flex-direction: column;
+}
+
+.c-column-reverse {
+    flex-direction: column-reverse;
 }
