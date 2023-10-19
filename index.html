@@ -33,7 +33,9 @@
                     <li>column: alineación vertical</li>
                 </ul>
             </li>
-            <li><b>flex-wrap:</b> se aplica al flex container envolver a todos los flex items como un solo grupo
+            <li><b>flex-wrap:</b> se aplica al flex container para envolver a todos los flex items y definir si aparecen
+                en
+                una sola línea o varías líneas
                 <ul>
                     <li>no-wrap: no envueltos (default)</li>
                     <li>wrap: envueltos</li>
@@ -41,7 +43,8 @@
                 </ul>
             </li>
 
-            <li><b>justify-content:</b> se aplica al flex container para ordenar a sus flex items respecto al eje principal
+            <li><b>justify-content:</b> se aplica al flex container para ordenar a sus flex items respecto al eje
+                principal
                 (main axis)
                 <ul>
                     <li>flex-start: se ordenaran desde el principio, iniciando por el primer flex item (default)</li>
@@ -57,7 +60,8 @@
                         iguales entre todos los flex items, incluso en los flex items de los extremos</li>
                 </ul>
             </li>
-            <li><b>align-items:</b> se aplica al flex container para ordenar a sus flex items respecto al eje transversal
+            <li><b>align-items:</b> se aplica al flex container para ordenar a sus flex items respecto al eje
+                transversal
                 (cross axis)
                 <ul>
                     <li>stretch: si el elemento no tiene un tamaño fijo, se estirará ocupando todo el espacio que tenga
@@ -68,7 +72,8 @@
                     <li>baseline: se ordenarán por las bases de los contenidos en cada flex item</li>
                 </ul>
             </li>
-            <li><b>align-content:</b> funciona solo si la propiedad flex-wrap tiene el valor "wrap" o "wrap-reverse" y se aplica al flex container para ordenar a sus flex items respecto al eje transversal (cross axis)
+            <li><b>align-content:</b> funciona solo si la propiedad flex-wrap tiene el valor "wrap" o "wrap-reverse" y
+                se aplica al flex container para ordenar a sus flex items respecto al eje transversal (cross axis)
                 <ul>
                     <li>stretch: si el elemento no tiene un tamaño fijo, se estirará ocupando todo el espacio que tenga
                         disponible (default)</li>
@@ -79,10 +84,10 @@
                 </ul>
             </li>
             <li><b>order:</b> se aplica en cada flex item para definir su orden de posición en el flex container
-                <ul>
-                    <li>0 (cero): posición natural (default)</li>
-                    <li>valores negativos y positivos</li>
-                </ul>
+            <li>0 (cero): posición natural (default)</li>
+            <ul>
+                <li>valores negativos y positivos</li>
+            </ul>
             </li>
             <li><b>flex-grow:</b> se aplica en cada flex item y es la capacidad de crecer en el espacio sobrante del
                 flex container<ul>
@@ -102,6 +107,8 @@
                         mismo elemento</li>
                 </ul>
             </li>
+            <li><b>align-self:</b> sobreescribe el valor de la propiedad "align-items" se aplica específicamente a un flex item y se ordena con respecto al eje transversal(cross axis)
+            </li>
         </ul>
         <div class="titulo">
             <h3>Casos de Flexbox</h3>
@@ -113,7 +120,7 @@
 
         <section class="caso">
             <div class="titulo">
-                <h3>Caso 0</h3>
+                <h3>row (main axis: horizontal)</h3>
             </div>
             <p><b>flex container:</b></p>
             <ul style="margin-top: 5px;">
@@ -140,7 +147,7 @@
 
         <section class="caso">
             <div class="titulo">
-                <h3>Caso 1</h3>
+                <h3>column (main axis: vertical) </h3>
             </div>
             <p><b>flex container:</b></p>
             <ul style="margin-top: 5px;">
