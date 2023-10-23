@@ -2,18 +2,29 @@
     --first-color: #f5f117;
     --second-color: #000000;
     --max-width: 1024px;
+    --font: "Roboto", monospace;
+}
+
+html {
+    box-sizing: border-box;
+    font-family: var(--font);
 }
 
 *,
 *::after,
 *::before {
-    box-sizing: border-box;
+    box-sizing: inherit;
 }
 
 img {
     width: 100%;
     height: auto;
     max-width: 600px;
+}
+
+ul input[type="radio"] {
+    margin-top: 10px;
+    margin-right: 10px;
 }
 
 .container {
@@ -50,6 +61,10 @@ img {
     margin-top: 4rem
 }
 
+.c-row {
+    flex-direction: row;
+}
+
 .c-row-reverse {
     flex-direction: row-reverse;
 }
@@ -60,4 +75,9 @@ img {
 
 .c-column-reverse {
     flex-direction: column-reverse;
+}
+
+.c-wrap {
+    flex-wrap: wrap;
+    align-content: flex-start;
 }
