@@ -25,6 +25,7 @@ img {
 ul input[type="radio"] {
     margin-top: 10px;
     margin-right: 10px;
+    cursor: pointer;
 }
 
 .container {
@@ -54,7 +55,6 @@ ul input[type="radio"] {
     background-color: var(--first-color);
     text-align: center;
     flex-basis: 30px;
-
 }
 
 .titulo h3 {
@@ -63,6 +63,7 @@ ul input[type="radio"] {
 
 .c-row {
     flex-direction: row;
+    /* transition: all 5s ease-in-out; */
 }
 
 .c-row-reverse {
@@ -75,9 +76,4 @@ ul input[type="radio"] {
 
 .c-column-reverse {
     flex-direction: column-reverse;
-}
-
-.c-wrap {
-    flex-wrap: wrap;
-    align-content: flex-start;
 }

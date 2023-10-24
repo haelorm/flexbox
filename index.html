@@ -147,39 +147,37 @@
 
         <section class="caso">
             <div class="titulo">
-                <h3>row</h3>
+                <h3>flex-direction</h3>
+                <p>se aplica al flex container para definir la dirección de los flex items</p>
             </div>
-            <p><b>flex container css:</b></p>
-            <ul class="p-row">
-                <input type="radio" name="row" value="c-row" checked>flex-direction: row (default)<br>
-                <input type="radio" name="row" value="c-row-reverse">flex-direction: row-reverse<br>
+
+            <ul>
+                <li><b>row:</b> alineación horizontal de los flex items iniciando desde la izquierda con el primer flex
+                    item (default)</li>
+                <li><b>row-reverse:</b> alineación horizontal de los flex items iniciando desde la derecha con el primer
+                    flex item</li>
+                <li><b>column:</b> alineación vertical de los flex items iniciando desde arriba con el primer flex item
+                </li>
+                <li><b>column-reverse:</b> alineación vertical de los flex items iniciando desde abajo con el primer
+                    flex
+                    item</li>
             </ul>
-            <div id="row" class="container-flex c-row">
+            </li>
+
+            <p style="margin-top: 2rem;"><b>flex container css:</b></p>
+
+            <ul class="p-row">
+                <input type="radio" name="rowColumn" value="c-row" checked>flex-direction: row (default)<br>
+                <input type="radio" name="rowColumn" value="c-row-reverse">flex-direction: row-reverse<br>
+                <input type="radio" name="rowColumn" value="c-column">flex-direction: column<br>
+                <input type="radio" name="rowColumn" value="c-column-reverse">flex-direction: column-reverse<br>
+            </ul>
+            <div id="rowColumn" class="container-flex c-rowColumn">
                 <article class="item i-row">1</article>
                 <article class="item i-row">2</article>
                 <article class="item i-row">3</article>
                 <article class="item i-row">4</article>
                 <article class="item i-row">5</article>
-            </div>
-        </section>
-
-
-        <section class="caso">
-            <div class="titulo">
-                <h3>column</h3>
-                <p>alineación vertical iniciando desde arriba con el primer flex item</p>
-            </div>
-            <p><b>flex container css:</b></p>
-            <ul class="p-column">
-                <input type="radio" name="column" value="c-column" checked>flex-direction: column<br>
-                <input type="radio" name="column" value="c-column-reverse">flex-direction: column-reverse<br>
-            </ul>
-            <div id="column" class="container-flex c-column">
-                <article class="item i-column">1</article>
-                <article class="item i-column">2</article>
-                <article class="item i-column">3</article>
-                <article class="item i-column">4</article>
-                <article class="item i-column">5</article>
             </div>
         </section>
     </div>
