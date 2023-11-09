@@ -61,19 +61,37 @@ ul input[type="radio"] {
     margin-top: 4rem
 }
 
-.c-row {
+.row {
     flex-direction: row;
-    /* transition: all 5s ease-in-out; */
 }
 
-.c-row-reverse {
+.row-reverse {
     flex-direction: row-reverse;
 }
 
-.c-column {
+.column {
     flex-direction: column;
 }
 
-.c-column-reverse {
+.column-reverse {
     flex-direction: column-reverse;
+}
+
+.item-wrap{
+}
+
+.container-flex-wrap{
+    flex-direction: column;
+}
+
+.no-wrap{
+    flex-wrap: nowrap;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.wrap-reverse {
+    flex-wrap: wrap-reverse;
 }

@@ -166,18 +166,88 @@
 
             <p style="margin-top: 2rem;"><b>flex container css:</b></p>
 
-            <ul class="p-row">
-                <input type="radio" name="rowColumn" value="c-row" checked>flex-direction: row (default)<br>
-                <input type="radio" name="rowColumn" value="c-row-reverse">flex-direction: row-reverse<br>
-                <input type="radio" name="rowColumn" value="c-column">flex-direction: column<br>
-                <input type="radio" name="rowColumn" value="c-column-reverse">flex-direction: column-reverse<br>
+            <ul>
+                <input type="radio" name="flex-direction" value="row" checked>flex-direction: row (default)<br>
+                <input type="radio" name="flex-direction" value="row-reverse">flex-direction: row-reverse<br>
+                <input type="radio" name="flex-direction" value="column">flex-direction: column<br>
+                <input type="radio" name="flex-direction" value="column-reverse">flex-direction: column-reverse<br>
             </ul>
-            <div id="rowColumn" class="container-flex c-rowColumn">
-                <article class="item i-row">1</article>
-                <article class="item i-row">2</article>
-                <article class="item i-row">3</article>
-                <article class="item i-row">4</article>
-                <article class="item i-row">5</article>
+            <div id="flex-direction" class="container-flex c-flex-direction">
+                <article class="item">1</article>
+                <article class="item">2</article>
+                <article class="item">3</article>
+                <article class="item">4</article>
+                <article class="item">5</article>
+            </div>
+        </section>
+
+        <section class="caso">
+            <div class="titulo">
+                <h3>flex-wrap</h3>
+                <p>se aplica al flex container para envolver a todos los flex items y definir si aparecen en una sola
+                    línea o varías líneas, se distingue mejor cuando los flex item respecto al cross axis tiene un
+                    tamaño definido</p>
+            </div>
+
+            <ul>
+                <li><b>no-wrap: </b>flex items no envueltos (default)</li>
+                <li><b>wrap:</b>flex items envueltos</li>
+                <li><b>wrap-reverse</b>flex items envueltos al reves</li>
+            </ul>
+            </li>
+
+            <p style="margin-top: 2rem;"><b>flex container css:</b></p>
+
+            <ul>
+                <input type="radio" name="flex-wrap" value="nowrap" checked>flex-wrap: nowrap (default)<br>
+                <input type="radio" name="flex-wrap" value="wrap">flex-wrap: wrap<br>
+                <input type="radio" name="flex-wrap" value="wrap-reverse">flex-wrap: wrap-reverse<br>
+            </ul>
+            <div id="flex-wrap" class="container-flex container-flex-wrap">
+                <article class="item item-wrap">1</article>
+                <article class="item item-wrap">2</article>
+                <article class="item item-wrap">3</article>
+                <article class="item item-wrap">4</article>
+                <article class="item item-wrap">5</article>
+                <article class="item item-wrap">6</article>
+                <article class="item item-wrap">7</article>
+                <article class="item item-wrap">8</article>
+                <article class="item item-wrap">9</article>
+                <article class="item item-wrap">10</article>
+                <article class="item item-wrap">11</article>
+                <article class="item item-wrap">12</article>
+                <article class="item item-wrap">13</article>
+                <article class="item item-wrap">14</article>
+                <article class="item item-wrap">15</article>
+                <article class="item item-wrap">16</article>
+                <article class="item item-wrap">17</article>
+                <article class="item item-wrap">18</article>
+                <article class="item item-wrap">19</article>
+                <article class="item item-wrap">20</article>
+                <article class="item item-wrap">21</article>
+                <article class="item item-wrap">22</article>
+                <article class="item item-wrap">23</article>
+                <article class="item item-wrap">24</article>
+                <article class="item item-wrap">25</article>
+                <article class="item item-wrap">26</article>
+                <article class="item item-wrap">27</article>
+                <article class="item item-wrap">28</article>
+                <article class="item item-wrap">29</article>
+                <article class="item item-wrap">30</article>
+                <article class="item item-wrap">31</article>
+                <article class="item item-wrap">32</article>
+                <article class="item item-wrap">33</article>
+                <article class="item item-wrap">34</article>
+                <article class="item item-wrap">35</article>
+                <article class="item item-wrap">36</article>
+                <article class="item item-wrap">37</article>
+                <article class="item item-wrap">38</article>
+                <article class="item item-wrap">39</article>
+                <article class="item item-wrap">40</article>
+                <article class="item item-wrap">41</article>
+                <article class="item item-wrap">42</article>
+                <article class="item item-wrap">43</article>
+                <article class="item item-wrap">44</article>
             </div>
         </section>
     </div>
