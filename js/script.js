@@ -8,10 +8,10 @@
             $cflexDirection.classList.remove("row-reverse", "column", "column-reverse");
         } else if (botonSeleccionado.value === "row-reverse") {
             $cflexDirection.classList.add("row-reverse");
-            $cflexDirection.classList.remove("row", "column", "c-column-reverse");
+            $cflexDirection.classList.remove("row", "column", "column-reverse");
         } else if (botonSeleccionado.value === "column") {
             $cflexDirection.classList.add("column");
-            $cflexDirection.classList.remove("row", "row-reverse", "c-column-reverse");
+            $cflexDirection.classList.remove("row", "row-reverse", "column-reverse");
         } else if (botonSeleccionado.value === "column-reverse") {
             $cflexDirection.classList.add("column-reverse");
             $cflexDirection.classList.remove("row", "row-reverse", "column");
