@@ -65,6 +65,8 @@ ul input[type="radio"] {
     margin-top: 4rem;
 }
 
+/* FLEX DIRECTION */
+
 .row {
     flex-direction: row;
 }
@@ -80,6 +82,8 @@ ul input[type="radio"] {
 .column-reverse {
     flex-direction: column-reverse;
 }
+
+/* WRAP */
 
 .no-wrap {
     flex-wrap: nowrap;
