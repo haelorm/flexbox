@@ -167,10 +167,14 @@
             <p style="margin-top: 2rem;"><b>flex container css:</b></p>
 
             <ul>
-                <input type="radio" name="flex-direction" value="row" checked>flex-direction: row (default)<br>
-                <input type="radio" name="flex-direction" value="row-reverse">flex-direction: row-reverse<br>
-                <input type="radio" name="flex-direction" value="column">flex-direction: column<br>
-                <input type="radio" name="flex-direction" value="column-reverse">flex-direction: column-reverse<br>
+                <input type="radio" name="flex-direction" value="row" id="row" checked>
+                <label for="row">flex-direction: row (default)</label><br>
+                <input type="radio" name="flex-direction" value="row-reverse" id="row-reverse">
+                <label for="row-reverse">flex-direction: row-reverse</label><br>
+                <input type="radio" name="flex-direction" value="column" id="column">
+                <label for="column">flex-direction: column</label><br>
+                <input type="radio" name="flex-direction" value="column-reverse" id="column-reverse">
+                <label for="column-reverse">flex-direction: column-reverse</label><br>
             </ul>
             <div id="flex-direction" class="container-flex c-flex-direction">
                 <article class="item">1</article>
@@ -198,9 +202,12 @@
             <p style="margin-top: 2rem;"><b>flex container css:</b> Cuando la propiedad "flex-direction" es "row"</p>
 
             <ul>
-                <input type="radio" name="flex-wrap" value="nowrap" checked>flex-wrap: nowrap (default)<br>
-                <input type="radio" name="flex-wrap" value="wrap">flex-wrap: wrap<br>
-                <input type="radio" name="flex-wrap" value="wrap-reverse">flex-wrap: wrap-reverse<br>
+                <input type="radio" name="flex-wrap" value="nowrap" id="nowrap" checked>
+                <label for="nowrap">flex-wrap: nowrap (default)</label><br>
+                <input type="radio" name="flex-wrap" value="wrap" id="wrap">
+                <label for="wrap">flex-wrap: wrap</label><br>
+                <input type="radio" name="flex-wrap" value="wrap-reverse" id="wrap-reverse">
+                <label for="wrap-reverse">flex-wrap: wrap-reverse</label><br>
             </ul>
             <div id="flex-wrap" class="container-flex container-flex-wrap">
                 <article class="item item-wrap">1</article>
