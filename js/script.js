@@ -44,3 +44,25 @@
     })
     seleccion();
 })(document);
+
+((d) => {
+    const $botonesRadio = d.querySelectorAll("input[name='flex-wrap-column']");
+    const $cflexWrapColumn = d.getElementById('flex-wrap-column');
+    const seleccion = () => {
+        let botonSeleccionado = d.querySelector('input[name="flex-wrap-column"]:checked');
+        if (botonSeleccionado.value === "nowrap") {
+            $cflexWrapColumn.classList.add("nowrap");
+            $cflexWrapColumn.classList.remove("wrap", "wrap-reverse");
+        } else if (botonSeleccionado.value === "wrap") {
+            $cflexWrapColumn.classList.add("wrap");
+            $cflexWrapColumn.classList.remove("nowrap", "wrap-reverse");
+        } else if (botonSeleccionado.value === "wrap-reverse") {
+            $cflexWrapColumn.classList.add("wrap-reverse");
+            $cflexWrapColumn.classList.remove("nowrap", "wrap");
+        }
+    }
+    $botonesRadio.forEach(boton => {
+        boton.addEventListener("change", seleccion)
+    })
+    seleccion();
+})(document);
