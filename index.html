@@ -63,7 +63,7 @@
             </ul>
             </li>
 
-            <p style="margin-top: 2rem;"><b>flex container css:</b></p>
+            <p style="margin-top: 2rem;"><b>flex container:</b></p>
 
             <ul>
                 <input type="radio" name="flex-direction" value="row" id="row" checked>
@@ -80,7 +80,6 @@
                 <article class="item">2</article>
                 <article class="item">3</article>
                 <article class="item">4</article>
-                <article class="item">5</article>
             </div>
         </section>
 
@@ -98,7 +97,7 @@
             </ul>
             </li>
 
-            <p style="margin-top: 2rem;"><b>flex container css:</b> Cuando la propiedad "flex-direction" es "row"</p>
+            <p style="margin-top: 2rem;"><b>flex container:</b> Cuando "flex-direction" es "row"</p>
 
             <ul>
                 <input type="radio" name="flex-wrap" value="nowrap" id="nowrap" checked>
@@ -127,17 +126,17 @@
                 <article class="item">16</article>
             </div>
 
-            <p style="margin-top: 2rem;"><b>flex container css:</b> Cuando la propiedad "flex-direction" es "column"</p>
+            <p style="margin-top: 2rem;"><b>flex container:</b> Cuando "flex-direction" es "column"</p>
 
             <ul>
-                <input type="radio" name="flex-wrap-column" value="nowrap" id="nowrap-column" checked>
+                <input type="radio" name="flex-w-column" value="nowrap" id="nowrap-column" checked>
                 <label for="nowrap-column">flex-wrap: nowrap (default)</label><br>
-                <input type="radio" name="flex-wrap-column" value="wrap" id="wrap-column">
+                <input type="radio" name="flex-w-column" value="wrap" id="wrap-column">
                 <label for="wrap-column">flex-wrap: wrap</label><br>
-                <input type="radio" name="flex-wrap-column" value="wrap-reverse" id="wrap-reverse-column">
+                <input type="radio" name="flex-w-column" value="wrap-reverse" id="wrap-reverse-column">
                 <label for="wrap-reverse-column">flex-wrap: wrap-reverse</label><br>
             </ul>
-            <div id="flex-wrap-column" class="column container-flex">
+            <div id="flex-w-column" class="column container-flex">
                 <article class="item">1</article>
                 <article class="item">2</article>
                 <article class="item">3</article>
@@ -154,6 +153,78 @@
                 <article class="item">14</article>
                 <article class="item">15</article>
                 <article class="item">16</article>
+            </div>
+        </section>
+
+        <section class="caso">
+            <div class="titulo">
+                <h3>justify-content</h3>
+                <p>se aplica al flex container para ordenar a sus flex items respecto al eje principal (main axis)</p>
+            </div>
+
+            <ul>
+                <li><b>flex-start: </b>los flex items se ordenan desde el principio, iniciando por el primer flex item
+                    (default)</li>
+                <li><b>flex-end:</b>los flex items se ordenarán desde el final, iniciando por el último flex item</li>
+                <li><b>center</b>los flex items se ordenan al centro</li>
+                <li><b>space-between</b>se utilizará el espacio sobrante del flex container para repartir espacios
+                    iguales entre los flex items pero excepto a los extremos (el primer y el último flex item estarán
+                    pegados a los extremos)</li>
+                <li><b>space-around</b>se utilizará el espacio sobrante del flex container para repartir espacios
+                    iguales entre los flex items pero en los extremos tendrán el 50% del espacio que hay entre los otros
+                    flex items</li>
+                <li><b>space-evenly</b>se utilizará el espacio sobrante del flex container para repartir espacios
+                    iguales entre todos los flex items, incluso en los flex items de los extremos</li>
+            </ul>
+            </li>
+
+            <p style="margin-top: 2rem;"><b>flex container:</b> Cuando "flex-direction" es "row"</p>
+
+            <ul>
+                <input type="radio" name="justify-content" value="flex-start" id="flex-start" checked>
+                <label for="flex-start">justify-content: flex-start (default)</label><br>
+                <input type="radio" name="justify-content" value="flex-end" id="flex-end">
+                <label for="flex-end">justify-content: flex-end</label><br>
+                <input type="radio" name="justify-content" value="center" id="center">
+                <label for="center">justify-content: center</label><br>
+                <input type="radio" name="justify-content" value="space-between" id="space-between">
+                <label for="space-between">justify-content: space-between</label><br>
+                <input type="radio" name="justify-content" value="space-around" id="space-around">
+                <label for="space-around">justify-content: space-around</label><br>
+                <input type="radio" name="justify-content" value="space-evenly" id="space-evenly">
+                <label for="space-evenly">justify-content: space-evenly</label><br>
+            </ul>
+
+            <div id="justify-content" class="row container-flex">
+                <article class="item">1</article>
+                <article class="item">2</article>
+                <article class="item">3</article>
+                <article class="item">4</article>
+
+            </div>
+
+            <p style="margin-top: 2rem;"><b>flex container:</b> Cuando "flex-direction" es "column"</p>
+
+            <ul>
+                <input type="radio" name="justify-c-column" value="flex-start" id="flex-start-column" checked>
+                <label for="flex-start-column">justify-content: flex-start (default)</label><br>
+                <input type="radio" name="justify-c-column" value="flex-end" id="flex-end-column">
+                <label for="flex-end-column">justify-content: flex-end</label><br>
+                <input type="radio" name="justify-c-column" value="center" id="center-column">
+                <label for="center-column">justify-content: center</label><br>
+                <input type="radio" name="justify-c-column" value="space-between" id="space-between-column">
+                <label for="space-between-column">justify-content: space-between</label><br>
+                <input type="radio" name="justify-c-column" value="space-around" id="space-around-column">
+                <label for="space-around-column">justify-content: space-around</label><br>
+                <input type="radio" name="justify-c-column" value="space-evenly" id="space-evenly-column">
+                <label for="space-evenly-column">justify-content: space-evenly</label><br>
+            </ul>
+
+            <div id="justify-c-column" class="column container-flex">
+                <article class="item">1</article>
+                <article class="item">2</article>
+                <article class="item">3</article>
+                <article class="item">4</article>
             </div>
         </section>
     </div>

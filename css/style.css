@@ -10,7 +10,7 @@ html {
     font-family: var(--font);
 }
 
-body{
+body {
     overflow-x: hidden;
 }
 
@@ -29,6 +29,10 @@ img {
 ul input[type="radio"] {
     margin-top: 10px;
     margin-right: 10px;
+    cursor: pointer;
+}
+
+label{
     cursor: pointer;
 }
 
@@ -54,6 +58,7 @@ ul input[type="radio"] {
     margin-right: auto;
     display: flex;
     max-width: 340px;
+    overflow: auto;
 }
 
 .item {
@@ -98,4 +103,30 @@ ul input[type="radio"] {
 
 .wrap-reverse {
     flex-wrap: wrap-reverse;
+}
+
+/* JUSTIFY-CONTENT */
+
+.flex-start {
+    justify-content: flex-start;
+}
+
+.center {
+    justify-content: center;
+}
+
+.flex-end {
+    justify-content: flex-end;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.space-around {
+    justify-content: space-around;
+}
+
+.space-evenly {
+    justify-content: space-evenly;
 }
