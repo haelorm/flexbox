@@ -35,110 +35,9 @@
                 y lo establece
                 como un contenedor de tipo flexbox</li>
         </ul>
-        <div class="titulo">
-            <h3>Propiedades Flexbox</h3>
-        </div>
-        <ul>
-            <li><b>flex-direction:</b> se aplica al flex container para definir la dirección de los flex items
-                <ul>
-                    <li>row: alineación horizontal de los flex items iniciando desde la izquierda con el primer flex
-                        item (default)</li>
-                    <li>row-reverse: alineación horizontal de los flex items iniciando desde la derecha con el primer
-                        flex item</li>
-                    <li>column: alineación vertical de los flex items iniciando desde arriba con el primer flex item
-                    </li>
-                    <li>column-reverse: alineación vertical de los flex items iniciando desde abajo con el primer flex
-                        item</li>
-                </ul>
-            </li>
-            <li><b>flex-wrap:</b> se aplica al flex container para envolver a todos los flex items y definir si aparecen
-                en
-                una sola línea o varías líneas, se distingue mejor cuando los flex item respecto al cross axis tiene un
-                tamaño definido.
-                <ul>
-                    <li>no-wrap: flex items no envueltos (default)</li>
-                    <li>wrap: flex items envueltos</li>
-                    <li>wrap-reverse: flex items envueltos al reves</li>
-                </ul>
-            </li>
-
-            <li><b>justify-content:</b> se aplica al flex container para ordenar a sus flex items respecto al eje
-                principal
-                (main axis)
-                <ul>
-                    <li>flex-start: los flex items se ordenan desde el principio, iniciando por el primer flex item
-                        (default)</li>
-                    <li>flex-end: los flex items se ordenaran desde el final, iniciando por el último flex item</li>
-                    <li>center: los flex items se ordenan al centro</li>
-                    <li>space-between: se utilizará el espacio sobrante del flex container para repartir espacios
-                        iguales entre los flex items pero excepto a los extremos (el primer y el último flex item
-                        estarán pegados a los extremos)</li>
-                    <li>space-around: se utilizará el espacio sobrante del flex container para repartir espacios
-                        iguales entre los flex items pero en los extremos tendrán el 50% del espacio que hay entre los
-                        otros flex items</li>
-                    <li>space-evenly: se utilizará el espacio sobrante del flex container para repartir espacios
-                        iguales entre todos los flex items, incluso en los flex items de los extremos</li>
-                </ul>
-            </li>
-            <li><b>align-items:</b> se aplica al flex container para ordenar a sus flex items respecto al eje
-                transversal
-                (cross axis)
-                <ul>
-                    <li>stretch: si los flex items no tienen un tamaño fijo, se estirarán ocupando todo el espacio que
-                        tenga
-                        disponible (default)</li>
-                    <li>flex-start: los flex items se ordenan desde el principio, iniciando por el primer flex item
-                    </li>
-                    <li>flex-end: los flex items se ordenan desde el final, iniciando por el último flex item</li>
-                    <li>center: los flex items se ordenan al centro</li>
-                    <li>baseline: los flex items se ordenan por las bases de los contenidos en cada flex item</li>
-                </ul>
-            </li>
-            <li><b>align-content:</b> funciona solo si la propiedad flex-wrap tiene el valor "wrap" o "wrap-reverse" y
-                se aplica al flex container para ordenar a sus flex items respecto al eje transversal (cross axis)
-                <ul>
-                    <li>stretch: si los flex items no tienen un tamaño fijo, se estirarán ocupando todo el espacio que
-                        tenga
-                        disponible (default)</li>
-                    <li>flex-start: los flex items se ordenan desde el principio, iniciando por el primer flex item
-                    </li>
-                    <li>flex-end: los flex items se ordenan desde el final, iniciando por el último flex item</li>
-                    <li>center: los flex items se ordenan al centro</li>
-                    <li>baseline: los flex items se ordenan por las bases de los contenidos en cada flex item</li>
-                </ul>
-            </li>
-            <li><b>order:</b> se aplica en cada flex item para definir su orden de posición en el flex container
-            <li>0 (cero): posición natural (default)</li>
-            <ul>
-                <li>valores negativos y positivos</li>
-            </ul>
-            </li>
-            <li><b>flex-grow:</b> se aplica en cada flex item y es la capacidad de crecer en el espacio sobrante del
-                flex container<ul>
-                    <li>Solo valores positivos</li>
-                </ul>
-            </li>
-            <li><b>flex-shrink:</b> se aplica en cada flex item y es la capacidad de reducirse cuando el flex container
-                se reduce o ya tiene espacio
-                <ul>
-                    <li>Solo valores positivos</li>
-                </ul>
-            </li>
-            <li><b>flex-basis:</b> se aplica a un item flex específico, si la alineación es "row" flex-basis
-                representará a la propiedad "width", y si la alineación es "column" representará a la propiedad "height"
-                <ul>
-                    <li>la propiedad flex-basis dejará sin efecto a la propiedad width cuando ambas esten aplicadas a un
-                        mismo elemento</li>
-                </ul>
-            </li>
-            <li><b>align-self:</b> sobreescribe el valor de la propiedad "align-items" se aplica específicamente a un
-                flex item y se ordena con respecto al eje transversal(cross axis)
-            </li>
-        </ul>
-
 
         <div class="titulo">
-            <h3>Colores para los ejemplos</h3>
+            <h3><i>Colores para los ejemplos</i></h3>
         </div>
         <ul>
             <li><b>flex container:</b> color negro</li>
@@ -225,35 +124,7 @@
                 <article class="item">13</article>
                 <article class="item">14</article>
                 <article class="item">15</article>
-                <!-- <article class="item">16</article>
-                <article class="item">17</article>
-                <article class="item">18</article>
-                <article class="item">19</article>
-                <article class="item">20</article>
-                <article class="item">21</article>
-                <article class="item">22</article>
-                <article class="item">23</article>
-                <article class="item">24</article>
-                <article class="item">25</article>
-                <article class="item">26</article>
-                <article class="item">27</article>
-                <article class="item">28</article>
-                <article class="item">29</article>
-                <article class="item">30</article>
-                <article class="item">31</article>
-                <article class="item">32</article>
-                <article class="item">33</article>
-                <article class="item">34</article>
-                <article class="item">35</article>
-                <article class="item">36</article>
-                <article class="item">37</article>
-                <article class="item">38</article>
-                <article class="item">39</article>
-                <article class="item">40</article>
-                <article class="item">41</article>
-                <article class="item">42</article>
-                <article class="item">43</article>
-                <article class="item">44</article> -->
+                <article class="item">16</article>
             </div>
         </section>
     </div>
